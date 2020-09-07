@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/actuarial-schedule/static/css/main.f785bc78.chunk.css",
-    "main.js": "/actuarial-schedule/static/js/main.ecd7b30d.chunk.js",
-    "main.js.map": "/actuarial-schedule/static/js/main.ecd7b30d.chunk.js.map",
-    "runtime-main.js": "/actuarial-schedule/static/js/runtime-main.225885fd.js",
-    "runtime-main.js.map": "/actuarial-schedule/static/js/runtime-main.225885fd.js.map",
-    "static/js/2.6f1f0be4.chunk.js": "/actuarial-schedule/static/js/2.6f1f0be4.chunk.js",
-    "static/js/2.6f1f0be4.chunk.js.map": "/actuarial-schedule/static/js/2.6f1f0be4.chunk.js.map",
-    "index.html": "/actuarial-schedule/index.html",
-    "precache-manifest.ca49d8c27923ad1ee0afb356c8c593c7.js": "/actuarial-schedule/precache-manifest.ca49d8c27923ad1ee0afb356c8c593c7.js",
-    "service-worker.js": "/actuarial-schedule/service-worker.js",
-    "static/css/main.f785bc78.chunk.css.map": "/actuarial-schedule/static/css/main.f785bc78.chunk.css.map",
-    "static/js/2.6f1f0be4.chunk.js.LICENSE.txt": "/actuarial-schedule/static/js/2.6f1f0be4.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/actuarial-schedule/static/media/logo.5d5d9eef.svg"
+    "main.css": "/io-timetable/static/css/main.f785bc78.chunk.css",
+    "main.js": "/io-timetable/static/js/main.42fa7118.chunk.js",
+    "main.js.map": "/io-timetable/static/js/main.42fa7118.chunk.js.map",
+    "runtime-main.js": "/io-timetable/static/js/runtime-main.c1c0b79d.js",
+    "runtime-main.js.map": "/io-timetable/static/js/runtime-main.c1c0b79d.js.map",
+    "static/js/2.6f1f0be4.chunk.js": "/io-timetable/static/js/2.6f1f0be4.chunk.js",
+    "static/js/2.6f1f0be4.chunk.js.map": "/io-timetable/static/js/2.6f1f0be4.chunk.js.map",
+    "index.html": "/io-timetable/index.html",
+    "precache-manifest.53ea7e1c13f17750bca084ea55c25771.js": "/io-timetable/precache-manifest.53ea7e1c13f17750bca084ea55c25771.js",
+    "service-worker.js": "/io-timetable/service-worker.js",
+    "static/css/main.f785bc78.chunk.css.map": "/io-timetable/static/css/main.f785bc78.chunk.css.map",
+    "static/js/2.6f1f0be4.chunk.js.LICENSE.txt": "/io-timetable/static/js/2.6f1f0be4.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/io-timetable/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.225885fd.js",
+    "static/js/runtime-main.c1c0b79d.js",
     "static/js/2.6f1f0be4.chunk.js",
     "static/css/main.f785bc78.chunk.css",
-    "static/js/main.ecd7b30d.chunk.js"
+    "static/js/main.42fa7118.chunk.js"
   ]
 }
