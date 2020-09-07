@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Contacts from './contacts.js';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route path="/io-timetable" component={App} exact />
+      <Route path='/io-timetable/contacts' component={Contacts} />
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 
