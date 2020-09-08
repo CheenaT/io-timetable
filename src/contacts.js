@@ -44,32 +44,34 @@ export default function MaterialTableDemo() {
   const [state, setState] = React.useState({
     columns: [
       { title: 'Name', field: 'name' },
-      { title: 'Email', field: 'email', render: rowData => <a href={'mailto:' + rowData.email}>{rowData.email}</a> },
-      { title: 'Istina', field: 'istina', render: rowData => <a href={rowData.istina}>{'istina'}</a> },
+      { title: 'Email', field: 'email', render: rowData => <a href={'mailto:' + rowData.email} target='_blank'>{rowData.email}</a> },
+      { title: 'Istina', field: 'istina', render: rowData => <a href={rowData.istina} target='_blank'>{rowData.istina ? 'istina' : 'not found'}</a> },
       {
         title: 'tg channel',
         field: 'tg',
-        render: rowData => <a href={rowData.tg}>{'telegram'}</a>
+        render: rowData => <a href={rowData.tg} target='_blank'>{rowData.tg ? 'telegram' : ''}</a>
       },
     ],
     data: [
+      { name: 'Морозов Владимир Викторович', email: 'vmorosov@mail.ru', istina: 'https://istina.msu.ru/profile/VladMorozov/' },
+      { name: 'Воеводин Владимир Валентинович', email: 'https://parallel.ru/vmk20', istina: 'https://istina.msu.ru/profile/voevodin@parallel.ru/' },
       { name: 'Тарлапан Олег Анатольевич', email: 'tarlapan@gse.cs.msu.ru', istina: 'https://istina.msu.ru/profile/olegt/', tg: 'https://t.me/joinchat/AAAAAEiT7ZjlqJtXd0yWpQ' },
-      { name: 'regular teacher', email: '@' },
-      { name: 'regular teacher', email: '@' },
-      { name: 'regular teacher', email: '@' },
-      { name: 'regular teacher', email: '@' },
-      { name: 'regular teacher', email: '@' },
-      { name: 'regular teacher', email: '@' },
-      { name: 'regular teacher', email: '@' },
-      { name: 'regular teacher', email: '@' },
-      { name: 'test teacher', email: '@' },
+      { name: 'Марченков Сергей Серафимович, Ложкин Сергей Андреевич', email: 'ssmarchen@yandex.ru', istina: 'https://istina.msu.ru/profile/MarchenkovSS/' },
+      { name: 'Шананин Александр Алексеевич', email: 'alexshan@yandex.ru', istina: 'https://istina.msu.ru/profile/alexshan/' },
+      { name: 'Саратовская Лариса Борисовна', email: 'not found', istina: 'https://istina.msu.ru/profile/SaratovskayaLB/' },
+      { name: 'Поспелова Ирина Игоревна', email: 'ipospelova05@yandex.ru', istina: 'https://istina.msu.ru/profile/ipospelova/' },
+      { name: 'Простов Василий Андреевич', email: 'prostovvasily@gmail.com', istina: 'https://istina.msu.ru/profile/ProstovVA/', tg: 'https://t.me/joinchat/Gtyn0BhVu6SLY9VydEec2w' },
+      { name: 'Алексей Феридович Измаилов', email: 'izmaf@cs.msu.ru' },
+      { name: 'Денисов Дмитрий Витальевич', email: 'dvden@bk.ru', istina: 'https://istina.msu.ru/profile/Dmitriy53/' },
+      { name: 'IO Prak, Полушкин Андрей Алексеевич', email: 'polushkinandrew@yandex.ru', istina: 'https://istina.msu.ru/profile/polushkinandrew@yandex.ru/' },
+      { name: 'Белолипецкий Александр Алексеевич', email: 'belolip4609@yandex.ru', istina: 'https://istina.msu.ru/profile/starobis14/' },
     ],
   });
 
   return (
     <div className="App">
       <header className="App-header">
-        <div className='contacts' onClick={() => history.push('/io-timetable')} style={{textAlign: 'left'}}>
+        <div className='contacts' onClick={() => history.push('/io-timetable')} style={{left: '2.4%', right: 'unset'}}>
           back
         </div>
         <MaterialTable
@@ -77,12 +79,7 @@ export default function MaterialTableDemo() {
           title="Pedagogues"
           columns={state.columns}
           data={state.data}
-          options={{
-            rowStyle: {
-              backgroundColor: '#EEE',
-            }
-          }}
-          style={{width: '95%'}}
+          style={{width: '95%', marginTop: '8%', marginBottom: '5%'}}
         />
       </header>
     </div>

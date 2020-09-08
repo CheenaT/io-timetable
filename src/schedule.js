@@ -15,6 +15,7 @@ const useStyles = makeStyles(theme => ({
       width: '95% !important',
     },
     marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(5),
     overflowX: 'auto',
     ['@media (min-width: 240px)']: {
       width: '95%',
@@ -37,21 +38,21 @@ function createData(time, calories, link, day, name) {
 
 const rows = [
   createData('08:45 10:20', 'Базы данных', 'https://ispras.zoom.us/j/96584169181?pwd=dW1iVmZBSWdQN2dKNXBtakdNY0lWZz09', 'Monday', 'Морозов | Тарлапан'),
-  createData('10:30 12:05', 'Урматы', 'https://us04web.zoom.us/j/79820777705?pwd=Rms0cU9xTlhzTzd4Mkc2NjNVYzh6dz09', 'Monday','Простов Василий Андреевич'),
-  createData('12:15 13:50', 262, 'https://www.youtube.com/playlist?list=PLOaW8o20mEgi_9DKM3zURWlvd7BF7MIXp', 'Monday', 'Марченков Сергей Серафимович, Ложкин Сергей Андреевич'),
+  createData('10:30 12:05', 'Урматы', 'https://us02web.zoom.us/j/85940749625?pwd=N05laWkwbXlrZWFHdnBYeGxFOTFpdz09', 'Monday','Простов Василий Андреевич'),
+  createData('12:15 13:50', 262, 'https://m.cs.msu.ru/s/SzdHtfy8q67277g', 'Monday', 'Марченков Сергей Серафимович, Ложкин Сергей Андреевич'),
   createData('14:35 16:10', 305, 'https://www.youtube.com/playlist?list=PLOaW8o20mEgisfwS1kf2NNH0M-bc14Eil', 'Monday', 'Морозов Владимир Викторович'),
   createData('16:20 17:55', 356, 'https://www.youtube.com/playlist?list=PLOaW8o20mEgisfwS1kf2NNH0M-bc14Eil', 'Monday', 'Морозов Владимир Викторович'),
   createData('18:00', 'ТИГР консультация', 'https://us04web.zoom.us/j/5267094600?pwd=NkQrN21ab2RnZ1VxY1c4eXhjcmNGUT09', 'Monday', 'Морозов Владимир Викторович'),
   createData('08:45 10:20', 356, 'https://us02web.zoom.us/j/82541244193?pwd=S1Q5T3hlS1J4V2pacVdEOGo4Ui9Xdz09#success', 'Tuesday', 'Поспелова Ирина Игоревна'),
   createData('10:30 12:05', 356, 'https://us02web.zoom.us/j/82706731808?pwd=MDZXUWRlMHdtcmVDQTJDRmNNR2tzQT09', 'Tuesday', 'Алексей Феридович Измаилов'),
-  createData('12:50 14:25', 356, '', 'Tuesday', 'Денисов Дмитрий Витальевич'),
-  createData('14:35 16:10', 356, 'https://zoom.us/j/99333219434?pwd=UU9SSHRMVEE2dXJjSWh1OFpTa0d0QT09', 'Tuesday', 'Воеводин Владимир Валентинович'),
-  createData('16:20 17:55', 356, 'https://www.youtube.com/playlist?list=PLOaW8o20mEgi_9DKM3zURWlvd7BF7MIXp', 'Tuesday', 'Марченков Сергей Серафимович, Ложкин Сергей Андреевич'),
+  createData('12:50 14:25', 356, 'https://us02web.zoom.us/j/84232001448?pw#success', 'Tuesday', 'Денисов Дмитрий Витальевич'),
+  createData('14:35 16:10', 356, 'https://zoom.us/j/93898428359?pwd=MUR3QjByQURxWTNEWUtXY1RPd0pLUT09#success', 'Tuesday', 'Воеводин Владимир Валентинович'),
+  createData('16:20 17:55', 356, 'https://m.cs.msu.ru/s/SzdHtfy8q67277g', 'Tuesday', 'Марченков Сергей Серафимович, Ложкин Сергей Андреевич'),
   createData('', 356, '', 'Tuesday', ''),
   createData('08:45 10:20', 356, 'https://mipt.ru/dcam/students/study/matmodeli/', 'Wednesday', 'Шананин Александр Алексеевич'),
   createData('10:30 12:05', 356, '', 'Wednesday', 'Белянкина'),
-  createData('12:15 13:50', 356, '', 'Wednesday', 'Саратовская Лариса Борисовна'),
-  createData('14:35 16:10', 356, 'everywhere', 'Wednesday', ''),
+  createData('12:15 13:50', 356, 'https://us02web.zoom.us/j/85034127456?pwd=OE02QVBGZ216YVFaYjVzREVUKzVwZz09#success', 'Wednesday', 'Саратовская Лариса Борисовна'),
+  createData('14:35 16:10', 356, '', 'Wednesday', ''),
   createData('16:20 17:55', 356, '', 'Wednesday', ''),
   createData('', 356, '', 'Wednesday', ''),
   createData('08:45 10:20', 356, '', 'Thursday', ''),
@@ -87,7 +88,7 @@ export default function SimpleTable() {
     {
     	Monday : { 0 : 'Базы данных', 1 : 'ДГДМ сем', 2 : 'ДГДМ лек', 3: 'ТИГР лек', 4 : 'ТИГР лек', 5: 'ТИГР консультация' },
       Tuesday : { 0 : 'ТР', 1 : 'Ньют. мет.', 2: 'ТР', 3 : 'СкиПОД', 4: 'ДГДМ лек' },
-      Wednesday : { 0 : 'Мат. мод. в экономике', 1 : 'Прак', 2 : 'Линг. культ. лек', 3: '', 4 : '' },
+      Wednesday : { 0 : 'Мат. мод. в экономике', 1 : 'Прак', 2 : 'Реферативное занятие с аспирантами', 3: '', 4 : '' },
       Thursday : { 0 : 'ВП', 1 : 'ВП', 2 : 'ВП', 3: '', 4 : '' },
       Friday : { 0 : '', 1 : '', 2 : '', 3: '', 4 : 'Акт. мат.' },
       Saturday : { 0 : '', 1 : '', 2 : '', 3: '', 4 : '' },
@@ -128,7 +129,16 @@ export default function SimpleTable() {
                   }
                 </TableCell>
                 <TableCell align="center" className="link">
-                  <a href={row.link}>{row.link.includes('youtube') ? 'youtube' : row.link.includes('7126616565') ? 'zoom password: 440883' : row.link.includes('82541244193') ? 'zoom password: 785387' : row.link === '' ? '' : 'zoom link'}</a>
+                  {
+                    {
+                      'https://zoom.us/j/7126616565': <a target='_blank' href={row.link}>{'zoom password: 440883'}</a>,
+                      'https://us02web.zoom.us/j/82541244193?pwd=S1Q5T3hlS1J4V2pacVdEOGo4Ui9Xdz09#success': <a target='_blank' href={row.link}>{'zoom password: 785387'}</a>,
+                      'https://us02web.zoom.us/j/85940749625?pwd=N05laWkwbXlrZWFHdnBYeGxFOTFpdz09': <a target='_blank' href={row.link}>{'zoom password: 542779'}</a>,
+                      'https://us02web.zoom.us/j/84232001448?pw#success': <a target='_blank' href={row.link}>{'zoom password: 664578'}</a>,
+                      'https://zoom.us/j/93898428359?pwd=MUR3QjByQURxWTNEWUtXY1RPd0pLUT09#success': <a target='_blank' href={row.link}>{'zoom password: 214336'}</a>,
+                      'https://us02web.zoom.us/j/85034127456?pwd=OE02QVBGZ216YVFaYjVzREVUKzVwZz09#success': <a target='_blank' href={row.link}>{'zoom password: 269439'}</a>,
+                    }[row.link] || <a target='_blank' href={row.link}>{row.link.includes('youtube') ? 'youtube' : row.link.includes('mipt') ? 'mipt' : row.link.includes('m.cs.msu.ru') ? 'cmc media' : row.link === '' ? '' : 'zoom link'}</a>
+                  }
                 </TableCell>
                 {
                   row.name &&
@@ -138,6 +148,20 @@ export default function SimpleTable() {
                 }
                 <TableCell align="center"></TableCell>
               </TableRow>
+              {lessons[row.day][i % 6] === "ДГДМ сем" && 
+              <TableRow key={row.time + "buhman"} className={classes.tableRow}>
+                <TableCell component="th" scope="row">
+                  {row.time}
+                </TableCell>
+                <TableCell align="center">
+                  <input type="text" value={lessons[row.day][i % 6] + ', 411'} onChange={handleChange} size="40" name={row.time} />
+                </TableCell>
+                <TableCell align="center" className="link">
+                  <a target='_blank' href={"https://us02web.zoom.us/j/88187181789?pwd=N1NhVVpqaWh4SzZlV2xvVWpsd3lpUT09#success"}>{'zoom password: 784254'}</a>
+                </TableCell>
+                <TableCell align="center">{"Бухман Антон Владимирович"}</TableCell>
+                <TableCell align="center"></TableCell>
+              </TableRow>}
             </>
           ))}
         </TableBody>

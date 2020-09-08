@@ -24,12 +24,20 @@ code {
 }
 
 .contacts {
-  text-align: right;
   position: absolute;
   top: 1%;
-  width: 95%;
+  right: 2.4%;
   font-size: 20px;
   cursor: pointer;
+}
+
+.materials {
+  color: #fff;
+  text-decoration: unset;
+  position: absolute;
+  top: 6%;
+  font-size: 20px;
+  right: 2.4%;
 }
 
 a {
@@ -38,4 +46,19 @@ a {
 
 input {
   text-align: center;
+}
+
+.MuiList-root {
+  width: 50px;
+
+}
+
+.MuiList-root > li {
+  padding: 6px 7px;
+  font-size: 22px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.MuiPaper-root {
+  display: inline-block;
 }
